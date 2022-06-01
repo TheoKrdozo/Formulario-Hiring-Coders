@@ -25,6 +25,13 @@
         /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     }
 
+    .formatacao-campos{
+        background-color: rgb(207, 236, 229);
+        font-size: 12px;
+        font-weight: bolder;
+        color: rgb(100, 1, 1);
+    }
+
     /* criando um estilo para id */
     #cadastro{
         color: blueviolet;
@@ -44,9 +51,10 @@
     <!-- Criando um Formulário -->
     <form id="cadastro" method="post">
         <label>Nome Aluno</label>
-        <input type="text" name="nome_aluno" class="cab-especial"><br><br>
+        <input placeholder="Digite seu nome" type="text" name="nome_aluno" class="formatacao-campos" required><br><br>
         <label>E-mail Aluno:</label>
-        <input type="email" name="email_do_aluno" class="cab-especial">
+        <input placeholder="Digite seu e-mail" type="email" name="email_do_aluno" class="formatacao-campos" required><br><br>
+        <input type="submit" value="Enviar!">
     </form>
 
     <h1 class="cab-especial">Conheça todos os nossos cursos</h1>
